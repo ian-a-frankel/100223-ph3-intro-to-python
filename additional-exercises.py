@@ -44,4 +44,29 @@
 
 # If the string is a palindrome (it's the same forward as backwards) then return True, otherwise return False. An example of a palindrome is 'abba' or 'radar'.
 
+def is_palindrome(text):
+    
+    simple_text = text.replace(' ','').lower()
+
+    list1 = list(simple_text)
+    list2 = list(reversed(list1))
+
+    # print(list1)
+    # print(list2)
+
+    print(list1.__contains__('i'))
+
+    return (list1 == list2)
+
+
+
+    # palindromic = True
+
+    # n = len(simple_text)
+
+    # for letter in range(n):
+
+    #     palindromic = palindromic and simple_text[letter] == simple_text[n - letter - 1]
+
+    #     return palindromic
 # As an additional challenge the function ignores white space so something like 'taco cat' would also be considered a palindrome.
